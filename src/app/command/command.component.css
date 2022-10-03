@@ -1,0 +1,27 @@
+.command {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.directoryWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.directory:before {
+  content: "\e0b0";
+  color: var(--bright-black);
+}
+
+.directory {
+  background: var(--blue);
+  color: var(--black);
+}
+
+.directory:after {
+  content: "\e0b0";
+  background: var(--bright-black);
+  color: var(--blue);
+}

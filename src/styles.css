@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Iosevka Nerd Font Complete Mono";
+  src: url(./assets/Iosevka Nerd Font Complete Mono.ttf) format("truetype");
+  font-weight: 300;
+}
+
+:root {
+  --black: #1a1b26;
+  --bright-black: #24283b;
+  --red: #f7768e;
+  --green: #9ece6a;
+  --yellow: #e0af68;
+  --blue: #7aa2f7;
+  --purple: #9a7ecc;
+  --cyan: #4abaaf;
+  --white: #acb0d0;
+}
+
+html {
+  background-color: var(--black);
+  background-image:
+    linear-gradient(
+      var(--bright-black) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to right,
+      var(--bright-black) 1px,
+      var(--black) 1px
+    );
+  background-size: 1rem 1rem;
+
+  color: var(--white);
+
+  font-family: "Iosevka Nerd Font Complete Mono", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+strong {
+  color: var(--cyan);
+}
+
+a:link {
+  color: var(--blue);
+}
+
+a:visited {
+  color: var(--purple);
+}

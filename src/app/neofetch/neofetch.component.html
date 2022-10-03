@@ -1,0 +1,17 @@
+<div class="neofetchWrapper">
+  <img src="{{imagePath}}" />
+  <div class="neofetchContent">
+    <strong>{{user}}@{{hostname}}</strong>
+    <span>{{divider}}</span>
+    <span *ngFor="let entry of entries">
+      <strong>{{entry.label}}: </strong>
+      <span *ngIf="entry.value.isAnchor; else elseBlock">
+        <a href={{entry.value.path}}>{{entry.value.str}}</a>
+      </span>
+      <ng-template #elseBlock>
+        {{entry.value.str}}
+      </ng-template>
+    </span>
+    <app-color-palette></app-color-palette>
+  </div>
+</div>

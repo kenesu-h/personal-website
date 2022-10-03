@@ -1,0 +1,31 @@
+.terminal {
+  width: 45vw;
+  padding: 1rem;
+
+  background: var(--bright-black);
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to bottom right,
+      var(--cyan),
+      var(--purple)
+    ) 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .terminal {
+    width: 90vw;
+  }
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

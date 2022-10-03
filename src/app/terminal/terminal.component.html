@@ -1,0 +1,104 @@
+<div class="terminal">
+  <app-command
+    user={{user}}
+    hostname={{hostname}}
+    directory={{directory}}
+    command="neofetch"
+  >
+  </app-command>
+  <app-neofetch
+    imagePath="../../assets/ein.jpg"
+    user={{user}}
+    hostname={{hostname}}
+    [entries]="[
+      {
+        label: 'Name',
+        value: {
+          isAnchor: false,
+          path: '',
+          str: 'Kenneth Ho'
+        }
+      },
+      {
+        label: 'Age',
+        value: {
+          isAnchor: false,
+          path: '',
+          str: age
+        }
+      },
+      {
+        label: 'GitHub',
+        value: {
+          isAnchor: true,
+          path: 'https://github.com/kenesu-h',
+          str: 'kenesu_h'
+        }
+      },
+      {
+        label: 'LinkedIn',
+        value: {
+          isAnchor: true,
+          path: 'https://www.linkedin.com/in/kenneth-ho-2001/',
+          str: 'Connect!'
+        }
+      },
+      {
+        label: 'Languages',
+        value: {
+          isAnchor: false,
+          path: '',
+          str: 'Rust, Python, JavaScript, Java, C++'
+        }
+      },
+      {
+        label: 'Frameworks',
+        value: {
+          isAnchor: false,
+          path: '',
+          str: 'React, Angular'
+        }
+      },
+      {
+        label: 'Theme',
+        value: {
+          isAnchor: true,
+          path: 'https://github.com/ghifarit53/tokyonight-vim',
+          str: 'tokyonight-vim'
+        }
+      },
+      {
+        label: 'Terminal Font',
+        value: {
+          isAnchor: true,
+          path: 'https://github.com/be5invis/Iosevka',
+          str: 'Iosevka'
+        }
+      },
+    ]"
+  >
+  </app-neofetch>
+
+  <app-command
+    user={{user}}
+    hostname={{hostname}}
+    directory={{directory}}
+    command="./about-me.sh"
+  >
+  </app-command>
+  <div class="about-me">
+    <p>Hey there! My name's Kenneth.</p>
+    <p>
+      I'm a developer who's currently studying computer science at Northeastern
+      University. At heart, I'm a pretty big video game fan - strategy and
+      fighting games are my go-to. I'm also passionate for all things tech,
+      whether it's computers, home automation, the latest (out of the many) web
+      frameworks, or the social and political impacts. Anything's fair game for
+      me!
+    </p>
+    <p>
+      Outside of tech, you can find me slowly attempting to expand my cooking
+      repertoire or learning how to play the ocarina.
+    </p>
+  </div>
+</div>

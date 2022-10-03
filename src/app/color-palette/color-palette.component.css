@@ -1,0 +1,9 @@
+.colorsWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.color {
+  width: 2rem;
+  height: 1rem;
+}
