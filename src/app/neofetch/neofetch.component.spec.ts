@@ -8,9 +8,8 @@ describe('NeofetchComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NeofetchComponent ]
-    })
-    .compileComponents();
+      declarations: [NeofetchComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NeofetchComponent);
     component = fixture.componentInstance;

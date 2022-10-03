@@ -7,17 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-neofetch',
   templateUrl: './neofetch.component.html',
-  styleUrls: ['./neofetch.component.css']
+  styleUrls: ['./neofetch.component.css'],
 })
 export class NeofetchComponent implements OnInit {
-
-  @Input() imagePath: string = "";
-  @Input() user: string = "";
-  @Input() hostname: string = "";
-  divider: string = "";
+  @Input() imagePath: string = '';
+  @Input() user: string = '';
+  @Input() hostname: string = '';
+  divider: string = '';
   @Input() entries: NeofetchEntry[] = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.divider = this.buildDivider();
@@ -25,17 +24,16 @@ export class NeofetchComponent implements OnInit {
 
   // Builds the divider between user@hostname and the entries.
   buildDivider(): string {
-    let divider: string = "";
+    let divider: string = '';
     for (
       let i: number = 0;
       i < this.user.length + this.hostname.length + 1;
       i++
     ) {
-      divider += "-";
+      divider += '-';
     }
     return divider;
   }
-
 }
 
 /**
@@ -65,4 +63,3 @@ class AnchorableString {
     this.str = str;
   }
 }
-

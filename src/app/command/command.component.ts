@@ -11,17 +11,13 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-command',
   templateUrl: './command.component.html',
-  styleUrls: ['./command.component.css']
+  styleUrls: ['./command.component.css'],
 })
 export class CommandComponent implements OnInit {
-  
-  @Input() user: string = "";
-  @Input() hostname: string = "";
-  @Input() directory: string = "";
-  @Input() command: string = "";
+  @Input() user: string = '';
+  @Input() hostname: string = '';
+  @Input() directory: string = '';
+  @Input() command: string = '';
 
-  constructor() { }
-
-  ngOnInit(): void { }
-
+  constructor() {}
 }

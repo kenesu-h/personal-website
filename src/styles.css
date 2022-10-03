@@ -19,16 +19,8 @@
 
 html {
   background-color: var(--black);
-  background-image:
-    linear-gradient(
-      var(--bright-black) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      to right,
-      var(--bright-black) 1px,
-      var(--black) 1px
-    );
+  background-image: linear-gradient(var(--bright-black) 1px, transparent 1px),
+    linear-gradient(to right, var(--bright-black) 1px, var(--black) 1px);
   background-size: 1rem 1rem;
 
   color: var(--white);

@@ -5,12 +5,7 @@
   background: var(--bright-black);
   border-width: 3px;
   border-style: solid;
-  border-image:
-    linear-gradient(
-      to bottom right,
-      var(--cyan),
-      var(--purple)
-    ) 1;
+  border-image: linear-gradient(to bottom right, var(--cyan), var(--purple)) 1;
 
   display: flex;
   flex-direction: column;

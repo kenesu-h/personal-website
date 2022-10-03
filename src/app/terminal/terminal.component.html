@@ -1,15 +1,15 @@
 <div class="terminal">
   <app-command
-    user={{user}}
-    hostname={{hostname}}
-    directory={{directory}}
+    user="{{ user }}"
+    hostname="{{ hostname }}"
+    directory="{{ directory }}"
     command="neofetch"
   >
   </app-command>
   <app-neofetch
     imagePath="../../assets/ein.jpg"
-    user={{user}}
-    hostname={{hostname}}
+    user="{{ user }}"
+    hostname="{{ hostname }}"
     [entries]="[
       {
         label: 'Name',
@@ -74,15 +74,15 @@
           path: 'https://github.com/be5invis/Iosevka',
           str: 'Iosevka'
         }
-      },
+      }
     ]"
   >
   </app-neofetch>
 
   <app-command
-    user={{user}}
-    hostname={{hostname}}
-    directory={{directory}}
+    user="{{ user }}"
+    hostname="{{ hostname }}"
+    directory="{{ directory }}"
     command="./about-me.sh"
   >
   </app-command>

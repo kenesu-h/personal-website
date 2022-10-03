@@ -14,13 +14,10 @@ import { ColorPaletteComponent } from './color-palette/color-palette.component';
     CommandComponent,
     TerminalComponent,
     NeofetchComponent,
-    ColorPaletteComponent
+    ColorPaletteComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

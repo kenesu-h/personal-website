@@ -13,18 +13,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-terminal',
   templateUrl: './terminal.component.html',
-  styleUrls: ['./terminal.component.css']
+  styleUrls: ['./terminal.component.css'],
 })
 export class TerminalComponent implements OnInit {
+  user: string = 'root';
+  hostname: string = 'kenneth.dev';
+  directory: string = '~';
+  age: string = '';
 
-  user: string = "root";
-  hostname: string="kenneth.dev";
-  directory: string = "~";
-  age: string = "";
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void { 
+  ngOnInit(): void {
     this.age = this.formatAge();
   }
 
@@ -51,6 +50,4 @@ export class TerminalComponent implements OnInit {
       return `${years} years old`;
     }
   }
-
 }
-
